@@ -14,13 +14,16 @@ def input_int(question):
 
 pwd_min_length = int(input_int("Password Minimum Length:  "))
 pwd_max_length = int(input_int("Password Maximum Length:  "))
+pwd_spec_charac = input("Should the password contain special characters?(Yes or No)  ")
 
 
-def generate_password(pwd_min_length, pwd_max_length):
-    alphabet = string.ascii_letters + string.digits + string.punctuation
+def generate_password(pwd_min_length, pwd_max_length, pwd_spec_charac):
+    alphabet = string.ascii_letters + string.digits
+    if pwd_spec_charac == "Yes":
+        alphabet = alphabet + string.punctuation
     number_between_min_max = randint(pwd_min_length, pwd_max_length)
     password = "".join(secrets.choice(alphabet) for i in range(number_between_min_max))
     return(f"Your Strong Passwprd is: \n{password}")
 
 
-print(generate_password(pwd_min_length, pwd_max_length))
+print(generate_password(pwd_min_length, pwd_max_length, pwd_spec_charac))
