@@ -13,4 +13,5 @@ Please feel free to contibute by openining issues with bug reports & feature req
 
 
 ###### Disclaimer: This is not made for real password generation! I am not liable for anything that happens when you use this Password Generator!
-###### Disclaimer: Please see the LICENSE for details on using this Password Generator
+
+###### Please see the LICENSE for details on using this Password Generator
