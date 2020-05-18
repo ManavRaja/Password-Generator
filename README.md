@@ -9,7 +9,8 @@ Please feel free to contibute by openining issues with bug reports & feature req
 <h2>How To Use</h2>
 
 1. Clone the repository to your machine & delete the .git & .github folders.
-2. Run **`python main.py`** & follow the input instructions & have a secure password generated for you!
+2. Run **`pip install art`** to have the pypi **Art** module get installed on your machine.
+3. Run **`python main.py`** & follow the input instructions & have a secure password generated for you!
 
 
 ###### Disclaimer: This is not made for real password generation! I am not liable for anything that happens when you use this Password Generator!
