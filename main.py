@@ -36,13 +36,13 @@ try:
 
         characters = ""
     
-        if pwd_upper == "Yes":
+        if pwd_upper == "Yes" or "Y" or "y":
             characters = characters + string.ascii_uppercase
-        if pwd_lower == "Yes":
+        if pwd_lower == "Yes" or "Y" or "y":
             characters = characters + string.ascii_lowercase
-        if pwd_num == "Yes":
+        if pwd_num == "Yes" or "Y" or "y":
             characters = characters + string.digits
-        if pwd_spec_charac == "Yes":
+        if pwd_spec_charac == "Yes" or "Y" or "y":
             characters = characters + string.punctuation
     
         password = "".join(secrets.choice(characters) for i in range(pwd_length))
