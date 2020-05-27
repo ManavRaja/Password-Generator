@@ -1,3 +1,4 @@
+# import modules
 import string
 import secrets
 import random
@@ -6,6 +7,7 @@ import time
 from art import text2art
 
 
+# function for getting input as int for pwd length
 def input_int(question):
     num = input(question)
     while num.isnumeric() == False:
@@ -14,6 +16,7 @@ def input_int(question):
     return num
 
 
+# ascii art
 print(text2art("Password  Generator"))
 time.sleep(1.5)
 print(text2art("Coded  With  Python..."))
@@ -22,6 +25,7 @@ print(text2art("By  @ManavRaja"))
 
 time.sleep(1)
 
+# getting input for pwd
 print("Please input a whole number for the password's length & 'Yes' or 'No' for all the other paramaters.(Case Sensitive)")
 time.sleep(3)
 pwd_length = int(input_int("Password Character Length:  "))
@@ -31,6 +35,7 @@ pwd_num = input("Should the password contain Numbers?(Yes or No)  ")
 pwd_spec_charac = input("Should the password contain Special Characters?(Yes or No)  ")
 
 
+# generate pwd function inside eror handling
 try:
     def generate_password(pwd_length, pwd_upper, pwd_lower, pwd_num, pwd_spec_charac):
 
